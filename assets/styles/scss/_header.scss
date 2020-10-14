@@ -16,6 +16,7 @@
     .header-content {
       width: 87%;
       margin-left: 35px;
+      padding-right: 15px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -23,6 +24,8 @@
       .nav-link {
         line-height: 20px;
         font-weight: 400;
+        text-decoration: none;
+        color: black;
 
         &:not(:last-child) {
           margin-right: 35px;
@@ -30,7 +33,7 @@
       }
 
       .icons {
-        width: 194px;
+        max-width: 194px;
         height: 24px;
         .icon:not(:last-child) {
           margin-right: 5px;

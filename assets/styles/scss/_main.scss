@@ -1,0 +1,52 @@
+@import './variables';
+
+.main {
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 58px;
+    padding: 0 62px 0 70px;
+  }
+
+  &-content {
+    width: 100%;
+    max-width: 384px;
+
+    .main-title {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 46px;
+      margin-bottom: 22px;
+    }
+
+    .main-text {
+      line-height: 26px;
+      color: $grey;
+      margin-bottom: 25px;
+    }
+
+    .main-btn {
+      width: 215px;
+      height: 40px;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 500;
+      color: $white;
+      text-transform: uppercase;
+      padding: 10px 0;
+      background-color: $blue;
+      border-radius: 51px;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      transition: background-color linear .2s, color linear .2s ;
+
+      &:hover {
+        background-color: $white;
+        color: $black;
+        border: 1px solid $blue;
+      }
+    }
+  }
+}
