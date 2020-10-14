@@ -1,0 +1,41 @@
+@import '../scss/variables';
+
+.header {
+  width: 100%;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 0;
+
+    .header-logo {
+      width: 10%;
+      max-width: 121px;
+    }
+
+    .header-content {
+      width: 87%;
+      margin-left: 35px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .nav-link {
+        line-height: 20px;
+        font-weight: 400;
+
+        &:not(:last-child) {
+          margin-right: 35px;
+        }
+      }
+
+      .icons {
+        width: 194px;
+        height: 24px;
+        .icon:not(:last-child) {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
