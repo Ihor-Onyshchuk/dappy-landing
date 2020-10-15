@@ -25,18 +25,37 @@
         line-height: 20px;
         font-weight: 400;
         text-decoration: none;
-        color: black;
+        color: $black;
+        border-bottom: 0 solid black;
+        transition: .2s linear border-width;
 
         &:not(:last-child) {
           margin-right: 35px;
+        }
+
+        &:hover {
+          border-bottom: 1px solid $black;
         }
       }
 
       .icons {
         max-width: 194px;
         height: 24px;
-        .icon:not(:last-child) {
-          margin-right: 5px;
+
+        .icon {
+          text-decoration: none;
+
+          &:not(:last-child) {
+            margin-right: 5px;
+          }
+
+          img {
+            transition: linear .2s transform;
+
+            &:hover {
+              transform: translateY(-4px);
+            }
+          }
         }
       }
     }
